@@ -120,11 +120,23 @@ echo "<br>";
 echo implode(" ",$datearray);
 
 //Question 10
-echo "<br>10. <br>";
+echo "<br><br>10. <br>";
+$y=count($year);
 
-foreach($year as $y){
-       echo "current year is $y<br>";
-    }
-    
+foreach($year as $y){$y = count($year);
+for($i = 0; $i < $y ; $i++)                      {
+ if ((($year[$i] % 4) == 0) && ((($year[$i] % 100) != 0) || (($year[$i] % 400) == 0)))
+               {echo "True ";}
+        else{ echo "False ";}};
+$y = count($year);
+for($i = 0; $i < $y ; $i++) ;
+$j=$i;
+{ switch($i){
+    Case 0 :  
+        if ((($year[$i] % 4) == 0) && ((($year[$i] % 100) != 0) || (($year[$i] % 400) == 0)))
+               {echo "True $year[$i]";}
+        else{ echo "False ";}}
+       break;
+}}
 
 ?>
